@@ -1,0 +1,9 @@
+<div class="container mt-80 mb-5">
+    <div class="row row-cols-1 g-4">
+      <table datatable [dtOptions]="dtOptions" class="row-border hover" *ngIf="products$.length">
+      </table>
+      <div *ngIf="!products$.length">
+        Loading...
+      </div>
+    </div>
+</div>
