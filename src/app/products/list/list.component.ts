@@ -31,13 +31,15 @@ export class ListComponent implements OnInit {
           { title: 'Intensifier', data: 'intensifier' },
         ],
         rowCallback: (row: Node, data: any, index: number) => {
-          $('td', row).on('click', () => {
-            this.router.navigate(['product/' + data.uid]);
-          });
+          row.addEventListener('click', (evt) => this.rowClick(data), false);
           return row;
         }
       };
     });
+  }
+
+  rowClick(data: any) {
+    this.router.navigate(['product/' + data.uid]);
   }
 
   ngOnInit(): void {

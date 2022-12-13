@@ -6,6 +6,8 @@ export const environment = {
   production: false
 };
 
+export const prURL = 'https://random-data-api.com/api/coffee/random_coffee?size=50';
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
