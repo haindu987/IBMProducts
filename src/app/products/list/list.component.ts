@@ -24,11 +24,11 @@ export class ListComponent implements OnInit {
         lengthMenu: [5, 10, 25, 50],
         data: this.products$,
         columns: [
-          { title: 'Product Name', data: 'blend_name' },
-          { title: 'Product Origin', data: 'origin' },
-          { title: 'Variety', data: 'variety' },
-          { title: 'Notes', data: 'notes' },
-          { title: 'Intensifier', data: 'intensifier' },
+          { title: 'Product Name', data: 'blend_name'},
+          { title: 'Product Origin', data: 'origin'},
+          { title: 'Variety', data: 'variety', className:'d-none d-sm-table-cell'},
+          { title: 'Notes', data: 'notes' , className:'d-none d-sm-table-cell'},
+          { title: 'Intensifier', data: 'intensifier', className:'d-none d-sm-table-cell'}
         ],
         rowCallback: (row: Node, data: any, index: number) => {
           row.addEventListener('click', (evt) => this.rowClick(data), false);
