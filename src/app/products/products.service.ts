@@ -8,9 +8,11 @@ import { prURL } from 'src/environments/environment';
 })
 export class ProductsService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
+    elements: number = 50;
+    get() {
+      return this.http.get<Products[]>(prURL + `?size=${this.elements}`);
+    }
 
-  get() {
-    return this.http.get<Products[]>(prURL);
-  }
+ 
 }

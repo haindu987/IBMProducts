@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const prURL = 'https://random-data-api.com/api/coffee/random_coffee?size=50';
+export const prURL = 'https://random-data-api.com/api/coffee/random_coffee';
 
 /*
  * For easier debugging in development mode, you can import the following file

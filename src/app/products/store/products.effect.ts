@@ -24,7 +24,11 @@ export class ProductsEffect {
         }
         return this.productsService
           .get()
-          .pipe(map((data) => ProductsFetchAPISuccess({ allProducts: data })));
+          .pipe(map((data) =>{
+            console.log("Products: ", data);
+           return ProductsFetchAPISuccess({ allProducts: data });
+          }
+          ));
       })
     )
   );

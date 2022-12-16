@@ -1,13 +1,13 @@
 <div class="mt-80">
-    <div class="row g-4">
-      <div class="col-12">
-        <table datatable [dtOptions]="dtOptions" class="row-border hover resp-display"
-        *ngIf="products$.length">
-          
-        </table>
-      </div>
-      <div *ngIf="!products$.length">
-        Loading...
-      </div>
+  <div class="row">
+    <div class="col-12">
+      <table datatable [dtOptions]="dtOptions" class="row-border hover resp-display"
+      *ngIf="products$.length">
+        
+      </table>
     </div>
+    <div *ngIf="!products$.length">
+      Loading...
+    </div>
+  </div>
 </div>

@@ -1,13 +1,13 @@
 <div class="card mt-80">
   <div class="card-header">
-    Coffee: {{ product.blend_name }}
+    Coffee: {{ product.blend_name ? product.blend_name  :""}}
   </div>
   <div class="card-body text-left">
     <div class="row">
       <div class="col-12">
         <div class="row">
           <div class="col-4">Name:</div>
-          <div class="col-8">{{ product.blend_name }}</div>
+          <div class="col-8">{{ product.blend_name ? product.blend_name  :"" }}</div>
         </div>
         <div class="row">
           <div class="col-4">Origin:</div>
